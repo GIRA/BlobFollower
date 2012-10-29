@@ -1,5 +1,5 @@
-﻿Compilación iniciada a las 17/09/2012 01:59:05 p.m..
-     1>Proyecto "C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\ImageAnalyzer.vcxproj" en el nodo 2 (build destinos).
+﻿Compilación iniciada a las 24/10/2012 05:38:41 p.m..
+     1>Proyecto "C:\Proyectos\ImageAnalyzer - for etoys 5\ImageAnalyzer.vcxproj" en el nodo 2 (build destinos).
      1>InitializeBuildStatus:
          Se creará "Debug\ImageAnalyzer.unsuccessfulbuild" porque se especificó "AlwaysCreate".
        ClCompile:
@@ -12,25 +12,25 @@
        ManifestResourceCompile:
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ImageAnalyzer.dll.embed.manifest.res" Debug\ImageAnalyzer_manifest.rc 
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ImageAnalyzer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.lib" /MACHINE:X86 /DLL Debug\app.res
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ImageAnalyzer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.lib" /MACHINE:X86 /DLL Debug\app.res
          Debug\ImageAnalyzer.dll.embed.manifest.res
          Debug\ImageAnalyzer.obj
          Debug\Stdafx.obj
-            Creando biblioteca C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.lib y objeto C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.exp
+            Creando biblioteca C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.lib y objeto C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.exp
        Manifest:
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ImageAnalyzer.dll.embed.manifest" /manifest Debug\ImageAnalyzer.dll.intermediate.manifest
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ImageAnalyzer.dll.embed.manifest.res" Debug\ImageAnalyzer_manifest.rc 
        LinkEmbedManifest:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ImageAnalyzer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.lib" /MACHINE:X86 /DLL Debug\app.res
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\ImageAnalyzer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.lib" /MACHINE:X86 /DLL Debug\app.res
          Debug\ImageAnalyzer.dll.embed.manifest.res
          Debug\ImageAnalyzer.obj
          Debug\Stdafx.obj
-         ImageAnalyzer.vcxproj -> C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\Debug\ImageAnalyzer.dll
+         ImageAnalyzer.vcxproj -> C:\Proyectos\ImageAnalyzer - for etoys 5\Debug\ImageAnalyzer.dll
        FinalizeBuildStatus:
          Se eliminará el archivo "Debug\ImageAnalyzer.unsuccessfulbuild".
          Aplicando tarea Touch a "Debug\ImageAnalyzer.lastbuildstate".
-     1>Compilación del proyecto terminada "C:\Users\MTeragni\Desktop\ImageAnalyzer - for etoys 3\ImageAnalyzer.vcxproj" (build destinos).
+     1>Compilación del proyecto terminada "C:\Proyectos\ImageAnalyzer - for etoys 5\ImageAnalyzer.vcxproj" (build destinos).
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:04.48
+Tiempo transcurrido 00:00:01.21

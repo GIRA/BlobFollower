@@ -18,10 +18,22 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+            Pen _p = new Pen(Color.Red,4);
+            Pen _p2 = new Pen(Color.Black, 2);
+
+            pictureBox1.Paint += (object _sender, PaintEventArgs _e) =>
+            {
+                _e.Graphics.DrawRectangle(_p, _r);
+                for (int i = 0; i < count; i++)
+                {
+                    _e.Graphics.DrawRectangle(_p2, new Rectangle(_subR[i].left, _subR[i].top, _subR[i].right - _subR[i].left, _subR[i].bottom - _subR[i].top));
+                }
+            };
 
         }
-
+        Rectangle _r = new Rectangle();
+        Rect[] _subR = new Rect[100];
+        int count = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             Image.setHue(220, 260);
@@ -35,7 +47,7 @@ namespace WindowsFormsApplication1
                 byte[] bytes = new byte[size];
 
                 System.Runtime.InteropServices.Marshal.Copy(data.Scan0, bytes, 0, size);
-                Image.setRectangleOverlapping(50);
+                Image.setRectangleOverlapping(20);
                 ushort[] bits = new ushort[size ];
                 Rect r;
                 System.Buffer.BlockCopy(bytes, 0, bits, 0, size);
@@ -43,12 +55,21 @@ namespace WindowsFormsApplication1
                 {
                     fixed (ushort* p = &bits[0])
                     {
-                       r= Image.trackMainRectangle(p, bmp.Width, bmp.Height);
+                        fixed(Rect* res= &_subR[0])
+                        {
+                            count = Image.findAllRectangles(p, bmp.Width, bmp.Height, res);
+                        }
+                        r= Image.trackMainRectangle(p, bmp.Width, bmp.Height);
                     }
                 }
                 bmp.UnlockBits(data);
+                _r = new Rectangle(r.left, r.top, r.right - r.left, r.bottom - r.top);
+                pictureBox1.Size = bmp.Size;
+                pictureBox1.Image = bmp;
+
  
             }
         }
+
     }
 }

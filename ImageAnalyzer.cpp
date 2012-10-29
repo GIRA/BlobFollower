@@ -175,10 +175,13 @@ extern "C"
 	{return rectangleOverlapping;}
 
 
-	__declspec(dllexport) int findAllRectangles(unsigned short* a, int width,int height,int* results )
+	__declspec(dllexport) int findAllRectangles(unsigned short* a, int width,int height,struct rectangle* results  )
 	{
+		if(width %2 !=0) width++;
 		//a is the image's first pixel pointer
 		if(minHue!=0 || maxHue !=360){
+			
+			if(width %2 !=0) width++;
 			int* pointsFoundPointer =(int*) malloc(width * height * 2*sizeof(int)); ;
 
 
@@ -200,7 +203,7 @@ extern "C"
 							r= (value>>10) & 31;
 							if(!isValid(r,g,b))
 							{
-								//*(a+i)=0;
+							//	*(a+i)=ix+iy;
 								//i es el indice de pixel que estoy trabajando
 								//los pixeles vienen de la siguiente manera:
 								/*
@@ -326,9 +329,9 @@ extern "C"
 			}while(!unchanged);
 	
 		
-			 for(int i =0; i<rectFound*6;i++)
+			 for(int i =0; i<rectFound;i++)
 			 {
-				 *(results+i)= *( (&(*(rects)).left)+i);
+				 *(results+i)= *( rects+(i*6));
 			}	
 			
 			free(rects);
@@ -382,7 +385,7 @@ extern "C"
 	{
 		
 		struct rectangle foundRects[10000];	
-		int size = findAllRectangles(a,width,height,(&foundRects[0].left));
+		int size = findAllRectangles(a,width,height,(&foundRects[0]));
 		struct rectangle currentRect = foundRects[0];
 
 			 for(int i =1; i<size;i++)

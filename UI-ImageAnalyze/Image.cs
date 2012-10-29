@@ -20,6 +20,8 @@ namespace WindowsFormsApplication1
         [DllImport("ImageAnalyzer", CallingConvention = CallingConvention.Cdecl)]
         public unsafe static extern Rect trackMainRectangle(ushort* a, int w, int h);
 
+        [DllImport("ImageAnalyzer", CallingConvention = CallingConvention.Cdecl)]
+        public unsafe static extern int findAllRectangles(ushort* a, int width, int height, Rect* results);
 
         [DllImport("ImageAnalyzer", CallingConvention = CallingConvention.Cdecl)]
         public static extern int getRowSkip();
@@ -37,13 +39,13 @@ namespace WindowsFormsApplication1
         public static extern int setRectangleOverlapping(int value);
       
     }
-    struct Rect
+  public  struct Rect
     {
-        int left;
-        int top;
-        int right;
-        int bottom;
-        int centerX;
-        int centerY;
+      public  int left;
+      public int top;
+      public int right;
+      public int bottom;
+      public int centerX;
+      public int centerY;
     }
 }
