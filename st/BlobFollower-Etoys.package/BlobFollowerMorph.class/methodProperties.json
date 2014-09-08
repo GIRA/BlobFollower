@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"additionsToViewerCategories" : "Tera 3/27/2014 11:15" },
+	"instance" : {
+		"blobFound" : "Richo 9/18/2012 17:17",
+		"blobHeight" : "Tera 3/27/2014 11:15",
+		"blobWidth" : "Tera 3/27/2014 11:14",
+		"blobX" : "Richo 9/18/2012 16:57",
+		"blobY" : "Tera 3/6/2014 14:26",
+		"brightnessMargin" : "Richo 9/18/2012 15:47",
+		"brightnessMargin:" : "Richo 9/18/2012 15:46",
+		"fps" : "Richo 9/18/2012 17:33",
+		"hueMargin" : "Richo 9/18/2012 15:47",
+		"hueMargin:" : "Richo 9/18/2012 15:45",
+		"initialize" : "Richo 9/18/2012 15:48",
+		"newPlayerInstance" : "Richo 9/18/2012 16:25",
+		"saturationMargin" : "Richo 9/18/2012 15:47",
+		"saturationMargin:" : "Richo 9/18/2012 15:45",
+		"source" : "Richo 9/18/2012 15:47",
+		"source:" : "Richo 9/18/2012 15:45",
+		"step" : "Tera 3/27/2014 10:34",
+		"stepTime" : "Richo 9/18/2012 15:53",
+		"trackedColor" : "Richo 9/18/2012 15:47",
+		"trackedColor:" : "Richo 9/18/2012 15:45" } }

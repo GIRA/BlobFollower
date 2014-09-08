@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getBlobFound" : "Richo 9/18/2012 17:15",
+		"getBlobHeight" : "Tera 3/27/2014 11:15",
+		"getBlobWidth" : "Tera 3/27/2014 11:15",
+		"getBlobX" : "Richo 9/18/2012 16:56",
+		"getBlobY" : "Tera 3/6/2014 14:23",
+		"getBrightnessMargin" : "Richo 9/18/2012 16:29",
+		"getFps" : "Richo 9/18/2012 17:33",
+		"getHueMargin" : "Richo 9/18/2012 16:29",
+		"getSaturationMargin" : "Richo 9/18/2012 16:29",
+		"getSource" : "Richo 9/18/2012 16:29",
+		"getTrackedColor" : "Richo 9/18/2012 16:29",
+		"setBrightnessMargin:" : "Richo 9/18/2012 16:29",
+		"setHueMargin:" : "Richo 9/18/2012 16:29",
+		"setSaturationMargin:" : "Richo 9/18/2012 16:30",
+		"setSource:" : "Richo 9/18/2012 16:31",
+		"setTrackedColor:" : "Richo 9/18/2012 16:30" } }

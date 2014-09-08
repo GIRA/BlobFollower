@@ -1,0 +1,14 @@
+{
+	"category" : "BlobFollower-Etoys",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"analyzer" ],
+	"name" : "BlobFollowerMorph",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

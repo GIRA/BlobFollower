@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"apiGetColumnSkip" : "Tera 9/17/2012 14:02",
+		"apiGetRectangleOverlapping" : "Tera 9/17/2012 14:02",
+		"apiGetRowSkip" : "Tera 9/17/2012 14:02",
+		"apiSetColumnSkip:" : "Richo 9/18/2012 15:10",
+		"apiSetHue:max:" : "Richo 9/18/2012 15:09",
+		"apiSetRectangleOverlapping:" : "Richo 9/18/2012 15:10",
+		"apiSetRowSkip:" : "Richo 9/18/2012 15:10",
+		"apiSetSat:max:" : "Richo 9/18/2012 15:10",
+		"apiSetV:max:" : "Richo 9/18/2012 15:10",
+		"apiTrackMainRectangle:width:height:" : "Richo 9/18/2012 15:10",
+		"on:track:h:s:v:" : "Richo 9/18/2012 15:06" },
+	"instance" : {
+		"blobFound" : "Richo 9/18/2012 17:24",
+		"brightnessMargin" : "Richo 9/18/2012 15:37",
+		"configure" : "Richo 9/18/2012 16:25",
+		"form" : "Richo 9/18/2012 17:32",
+		"fps" : "Richo 9/18/2012 17:34",
+		"hueMargin" : "Richo 9/18/2012 15:37",
+		"initializeWith:trackedColor:hueMargin:saturationMargin:brightnessMargin:" : "Richo 9/18/2012 17:37",
+		"saturationMargin" : "Richo 9/18/2012 15:37",
+		"source" : "Richo 9/18/2012 15:37",
+		"track" : "Richo 9/18/2012 17:41",
+		"trackedColor" : "Richo 9/18/2012 15:37" } }

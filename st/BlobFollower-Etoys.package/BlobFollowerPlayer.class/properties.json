@@ -1,0 +1,14 @@
+{
+	"category" : "BlobFollower-Etoys",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BlobFollowerPlayer",
+	"pools" : [
+		 ],
+	"super" : "Player",
+	"type" : "normal" }

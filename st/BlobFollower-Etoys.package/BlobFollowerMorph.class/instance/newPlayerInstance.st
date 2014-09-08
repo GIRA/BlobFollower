@@ -1,0 +1,3 @@
+accessing
+newPlayerInstance
+	^ BlobFollowerPlayer newUserInstance
