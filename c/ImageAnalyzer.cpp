@@ -4,7 +4,7 @@
 
 #ifdef WIN32
 #define	EXPORT __declspec(dllexport)
-#elif
+#else
 #define EXPORT
 #endif
 
