@@ -3,6 +3,6 @@ on: aMorph track: trackedColor h: hueMargin s: saturationMargin v: brightnessMar
 	^ self forThisPlatform basicNew
 		initializeWith: aMorph
 		trackedColor: trackedColor
-		hueMargin: hueMargin
-		saturationMargin: saturationMargin
-		brightnessMargin: brightnessMargin
+		hueMargin: (hueMargin min: 360 max: 0)
+		saturationMargin: (saturationMargin min: 1 max: 0)
+		brightnessMargin: (brightnessMargin min: 1 max: 0)
