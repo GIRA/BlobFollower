@@ -1,9 +1,13 @@
 // Archivo DLL principal.
-
-#include "stdafx.h"
 #include "stdlib.h"
 #include "math.h"
-#include "ImageAnalyzer.h"
+
+#ifdef WIN32
+#define	EXPORT __declspec(dllexport)
+#elif
+#define EXPORT
+#endif
+
 extern "C"
 {
 	//deberia funcionar para imagenes con 16 bits de depth
@@ -117,12 +121,12 @@ extern "C"
 		return ret;
 	}
 	
-	__declspec(dllexport) bool isValid(int,int,int);
+	EXPORT bool isValid(int,int,int);
 	
 	
 	
 	
-	__declspec(dllexport) void RGBtoHSV(double r, double g, double b, double *h, double *s ,double *v)
+	EXPORT void RGBtoHSV(double r, double g, double b, double *h, double *s ,double *v)
 	{
 		struct rgb color;
 		color.r=r;
@@ -136,25 +140,25 @@ extern "C"
 	}
 	
 	int rowSkip=0;
-	__declspec(dllexport) void setRowSkip(int value)
+	EXPORT void setRowSkip(int value)
 	{
 		if(rowSkip>=0)
 		{
 			rowSkip=value;
 		}
 	}
-	__declspec(dllexport) int getRowSkip()
+	EXPORT int getRowSkip()
 	{return rowSkip;}
 
 	int columnSkip=1;
-		__declspec(dllexport) void setColumnSkip(int value)
+	EXPORT void setColumnSkip(int value)
 	{
 		if(columnSkip>=0)
 		{
 			columnSkip=value;
 		}
 	}
-	__declspec(dllexport) int getColumnSkip()
+	EXPORT int getColumnSkip()
 	{
 		return columnSkip;
 	}
@@ -164,18 +168,18 @@ extern "C"
 
 	int rectangleOverlapping=20;
 
-	__declspec(dllexport) void setRectangleOverlapping(int value)
+	EXPORT void setRectangleOverlapping(int value)
 	{
 		if(rectangleOverlapping>=3)
 		{
 			rectangleOverlapping=value;
 		}
 	}
-	__declspec(dllexport) int getrectangleOverlapping()
+	EXPORT int getrectangleOverlapping()
 	{return rectangleOverlapping;}
 
 
-	__declspec(dllexport) int findAllRectangles(unsigned short* a, int width,int height,struct rectangle* results  )
+	EXPORT int findAllRectangles(unsigned short* a, int width,int height,struct rectangle* results  )
 	{
 		if(width %2 !=0) width++;
 		//a is the image's first pixel pointer
@@ -381,7 +385,7 @@ extern "C"
 
 	
 	//this should return the pointer of the biggest rectangle.
-	__declspec(dllexport) struct rectangle trackMainRectangle(unsigned short* a, int width,int height)
+	EXPORT struct rectangle trackMainRectangle(unsigned short* a, int width,int height)
 	{
 		
 		struct rectangle foundRects[10000];	
@@ -444,19 +448,20 @@ extern "C"
 	}
 
 	  
-	__declspec(dllexport) void setHue(double min,double max)
+	EXPORT void setHue(double min,double max)
 	{
 		minHue=OminHue=min;
 		maxHue=OmaxHue=max;
 	}
-	__declspec(dllexport) void setSaturation(double min,double max)
+	EXPORT void setSaturation(double min,double max)
 	{
 		minSat=OminSat=min;
 		maxSat=OmaxSat=max;
 	}
-	__declspec(dllexport) void setBrightness(double min,double max)
+	EXPORT void setBrightness(double min,double max)
 	{
 		minV=OminV=min;
 		maxV=OmaxV=max;
 	}
 }
+
