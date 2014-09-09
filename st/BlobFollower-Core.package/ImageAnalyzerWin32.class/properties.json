@@ -1,0 +1,14 @@
+{
+	"category" : "BlobFollower-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ImageAnalyzerWin32",
+	"pools" : [
+		 ],
+	"super" : "ImageAnalyzer",
+	"type" : "normal" }

@@ -1,6 +1,6 @@
 instance creation
 on: aMorph track: trackedColor h: hueMargin s: saturationMargin v: brightnessMargin
-	^ self basicNew
+	^ self forThisPlatform basicNew
 		initializeWith: aMorph
 		trackedColor: trackedColor
 		hueMargin: hueMargin
